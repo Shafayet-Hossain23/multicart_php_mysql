@@ -1,0 +1,39 @@
+
+https://preview.themeforest.net/item/andshop-ecommerce-react-js-template/full_screen_preview/33822003?_ga=2.106361603.1470532857.1658167472-914984332.1606299201
+https://andshop-react.netlify.app/electronics
+
+
+
+https://themeforest.net/item/multikart-responsive-ecommerce-html-template/22809967
+
+http://themes.pixelstrap.com/multikart/front-end/electronic-3.html
+
+http://themes.pixelstrap.com/multikart/front-end/electronic-2.html
+
+
+<?php while($result= mysqli_fetch_assoc($data)){ ?>
+
+            <!-- 1 column product -->
+            <div class="shop-pro-col-one">
+              <div class="shop-pro-col-content">
+                <a href="spro.php?p_id=<?php echo $result["p_id"];?>"><img src='admin/pic/<?php echo $result["p_img"];?>' alt=""></a>
+                
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h2><?php echo $result["p_name"];?></h2>
+                <h4>$<?php echo $result["p_price"];?><span><strike>$46</strike></span> </h4>
+                <p><?php echo $result["p_cat"];?></p>
+              </div>
+            </div>
+
+          <?php } ?>
+
+Kamrul!20087
+
+
+

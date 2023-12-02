@@ -1,0 +1,20 @@
+.kamrul-cart-btn a{
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+.kamrul-cart{
+    text-align: center;
+}
+.kamrul-cart table i{
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+}

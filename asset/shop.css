@@ -1,0 +1,163 @@
+.shop-banner{
+    background-image: url('./img/shop-banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 70px 0;
+       
+}
+.shop-banner-content h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+.shop-banner-content p{
+    margin:0;
+
+}
+.shop-banner-content i{
+    color: #fff;
+    font-size: 16px;
+
+}
+.shop-banner-content a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+.shop-banner-content .shop-color span{
+    color: #f79837;
+}
+
+.shop-page-row{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.shop-page-sidebar{
+    width: 26%;
+    margin-right: 2%;
+}
+.shop-page-sidebar-row{
+    background-color: #F6F6F6;
+    padding: 40px;
+}
+
+.shoop-page-sid-brand h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
+.shoop-page-sid-brand ul li{
+    list-style: none;
+    margin-bottom: 8px;
+    margin-left: -38px;
+}
+
+.shoop-page-sid-brand ul li a{
+    text-decoration: none;
+    border: 1.5px solid #444444;
+    border-radius: 5px;
+    padding: 1px 6px;
+    margin-bottom: 10px;
+    font-weight: 200px;
+    color:black;
+    background-color: #dcdde1;
+    transition: 0.5s ease;
+}
+
+.shoop-page-sid-brand ul li a:hover{
+    color:#F6F6F6;
+    background-color: black;
+}
+
+.shoop-page-sid-color h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 15px;
+    margin-top:40px;
+
+}
+.checkbox-colors{
+    display: flex;
+}
+.checkbox-colors-one{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+.shoop-page-sid-color .white{ 
+    background-color: #f1f2f6;
+}
+.shoop-page-sid-color .black{ 
+    background-color: #000;
+}
+.shoop-page-sid-color .green{ 
+    background-color: #27ae60;
+}
+.shoop-page-sid-color .orange{ 
+    background-color: #EE5A24;
+}
+.shoop-page-sid-color .yellow{ 
+    background-color: #f1c40f;
+}
+.shoop-page-sid-color .red{ 
+    background-color: #EA2027;
+}
+
+
+
+
+
+.shoop-page-sid-size h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 15px;
+    margin-top:40px;
+
+}
+
+.shoop-page-sid-size input{
+    margin-bottom: 14px;
+}
+
+.shoop-page-sid-size label{
+    font-size: 16px;
+}
+.shoop-page-sid-size label:hover{
+    color:#EA2027;
+}
+
+
+
+.shoop-page-sid-img img{
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+.shop-page-products-all{
+    background-color:;
+    width: 70%;
+}
+
+.shop-pro-col{
+    width: 30%;
+    border: 3px solid #EBEBEB;
+    border-radius: 5px;
+}

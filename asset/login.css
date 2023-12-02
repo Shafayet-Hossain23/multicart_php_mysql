@@ -1,0 +1,19 @@
+.login-banner{
+	background-image: url('img/login1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:250px;
+	
+}
+
+.login-content{
+	margin: 0px 100px;
+    padding: 70px 0;
+}
+
+.login-content input{
+    width: 50%;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+

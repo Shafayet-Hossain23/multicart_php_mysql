@@ -1,0 +1,35 @@
+
+
+
+
+.form-background{
+    background-image: url('img/banner1.png');
+    background-size: cover;
+    height: 200;
+    
+}
+
+.form-list{
+    margin: 0px 100px;
+    padding: 70px 0;
+    
+}
+.form-background input{
+    width: 50%;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.form-background input[type=submit]{
+        color: #ffffff;
+        background-color: #000000;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    
+}
+.form-background input[type=submit]:hover{
+    background-color: #fa6908 ;
+    
+}
+

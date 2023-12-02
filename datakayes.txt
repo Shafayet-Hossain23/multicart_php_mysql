@@ -1,0 +1,169 @@
+<!--database & links php 
+
+
+src="admin/pic/<?php echo $result["p_img"];?>"
+
+<?php echo $result["p_name"];?>
+<?php echo $result["p_price"];?>
+<?php echo $result["p_cat"];?>
+<?php echo $result["p_description"];?>
+
+
+href="sprotab.php?p_id=<?php echo $result["p_id"];?>"
+
+
+
+
+
+
+
+code-->
+
+<!--product upload-->
+<?php
+
+
+$con=mysqli_connect("localhost","root","mysql","shop");
+if(!$con)
+{
+    echo "error";
+}
+if(isset($_POST['p_button']))
+{
+    
+$Name = $_POST['p_name'];
+
+$price = $_POST['p_price'];
+$description=$_POST['p_description'];
+$p_cat=$_POST['p_cat'];
+
+
+$t_name=$_FILES['p_img']['tmp_name'];
+$file_name=$_FILES['p_img']['name'];
+
+
+move_uploaded_file($t_name,"admin/pic/$file_name");
+
+$query="insert into product(p_name,p_description,p_img,p_price,p_cat)values('$Name','$description','$file_name','$price','$p_cat')";
+$data=mysqli_query($con,$query);
+if($data){
+ echo "done";
+}
+
+}
+
+
+?> 
+
+
+
+<!--shop & product page links-->
+<?php
+$p_id=$_GET['p_id'];
+$con=mysqli_connect("localhost","root","mysql","shop");
+$query="select * from product where p_id='$p_id'";
+$data=mysqli_query($con,$query);
+
+$result= mysqli_fetch_assoc($data);
+
+
+?>
+
+
+
+
+?> 
+
+<!--show products from database-->
+<?php
+
+$con=mysqli_connect("localhost","root","mysql","shop");
+$query="select * from product";
+$data=mysqli_query($con,$query);
+
+
+?>
+
+<!--shop page data-->
+ <?php while($result= mysqli_fetch_assoc($data)){ ?>
+
+    <!--product meta data-->
+        href="your product page name?p_id=<?php echo $result["p_id"];?>"
+        <?php echo $result["p_name"];?>
+        <?php echo $result["p_price"];?>
+        <?php echo $result["p_cat"];?>
+        <?php echo $result["p_description"];?>
+    <!--product meta data-->
+
+  <?php } ?>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+            <div class="product-small-img-one"><img src="asset/img/products/f1.jpg" alt="" onclick="myFunction(this)"></div>
+
+            <img id="imageBox" src="asset/img/products/f1.jpg" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+
+        <div>
+            <h2>Upload your products here</h2>
+            <form action="" method="POST" enctype="multipart/form-data">
+                
+
+                <label for="name">Name</label><br>
+                <input type="text" name="p_name"><br>
+                <label for="image">Image</label><br>
+                <input type="file" name="p_img"><br>
+            
+                <label for="Description">Description</label><br>
+                <input type="text" name="p_description"><br>
+
+                <label for="price">Price</label><br>
+                <input type="number" name="p_price"><br>
+
+                <label for="p_cat">Product Category</label><br>
+                <input type="text" name="p_cat" ><br>
+
+                <input type="submit" name="p_button" value="submit">
+
+            </form>
+
+
+        </div>
+    </section>
+
+
+    <script>
+        function myFunction(smallImg)
+        {
+            var fullImg = document.getElementById("imageBox")
+            fullImg.src = smallImg.src;
+        }
+    </script>
+</body>
+</html>
+
